@@ -1,0 +1,25 @@
+my-app/
+├── src/
+│   ├── app/              # App Router (Next.js 13+)
+│   │   ├── layout.tsx    # Root layout component
+│   │   ├── page.tsx      # Main page component
+│   │   ├── api/          # API routes
+│   │   ├── (dashboard)/  # Route groups (optional)
+│   ├── components/       # Reusable UI components
+│   ├── layouts/          # Shared layouts
+│   ├── redux/            # Redux store and slices
+│   │   ├── store.ts      # Redux store setup
+│   │   ├── slices/       # Feature-based state slices
+│   ├── models/           # Database models
+│   ├── controllers/      # Business logic
+│   ├── services/         # External API integrations
+│   ├── utils/            # Helper functions
+│   ├── hooks/            # Custom React hooks
+│   ├── middleware/       # Middleware functions
+│   ├── styles/           # Global styles
+│   ├── config/           # Configuration files
+│   ├── tests/            # Unit and integration tests
+├── public/               # Static assets
+├── .env                  # Environment variables
+├── next.config.js        # Next.js configuration
+├── package.json          # Dependencies and scripts
