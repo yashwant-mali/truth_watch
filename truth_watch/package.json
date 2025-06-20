@@ -4,16 +4,25 @@
   "private": true,
   "scripts": {
     "clean": "rimraf .next",
-    "dev": "next dev --turbopack",
+      "dev": "node server.js",
     "build": "npm run clean && next build",
     "start": "next start",
     "lint": "next lint"
-    
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@google/generative-ai": "^0.24.1",
+    "@mui/icons-material": "^7.1.1",
+    "@mui/material": "^7.1.2",
     "next": "^15.3.3",
+    "next-auth": "^4.24.11",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.6.2",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
