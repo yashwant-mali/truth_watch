@@ -23,3 +23,16 @@ my-app/
 ├── .env                  # Environment variables
 ├── next.config.js        # Next.js configuration
 ├── package.json          # Dependencies and scripts
+
+
+before socket 
+    // "dev": "next dev --turbopack",
+
+
+after socket 
+
+"scripts": {
+  "dev": "node server.js",
+  "build": "next build",
+  "start": "NODE_ENV=production node server.js"
+}
