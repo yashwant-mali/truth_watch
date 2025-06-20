@@ -21,7 +21,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-const navItems = ["Dashboard", "About", "Info", "Yashgpt", "Reports", "Series", "Contact", 'Chat'];
+const navItems = ["Dashboard", "About", "Info", "Yashgpt", "Reports", "Series", "News", 'Chat'];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);

@@ -55,7 +55,7 @@ export default function Dashboard() {
             p: 0
           }}
         >
-          <Link href="/contact" style={{ textDecoration: 'none' }}>
+          <Link href="/news" style={{ textDecoration: 'none' }}>
             <Button
               variant="contained"
               color="primary"
@@ -69,7 +69,7 @@ export default function Dashboard() {
               Indian News
             </Button>
           </Link>
-          <Link href="/contact/global" style={{ textDecoration: 'none' }}>
+          <Link href="/news/global" style={{ textDecoration: 'none' }}>
             <Button
               variant="contained"
               color="secondary"
@@ -117,41 +117,114 @@ export default function Dashboard() {
         </Link>
       </Paper>
 
-      {/* Section 3 & 4: Placeholder Containers */}
-      <Grid container spacing={4}>
+      <Grid container spacing={12} sx={{ py: 1, pl: 4 }}>
+        {/* Card 1 - Let's Chat */}
         <Grid item xs={12} md={6}>
           <Paper
-            elevation={3}
+            elevation={4}
             sx={{
-              height: '50vh',
-              borderRadius: 4,
-              p: 3,
+              height: 300,
+              borderRadius: 3,
+              p: 4,
               backgroundColor: "#e3f2fd",
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center'
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
+              width: "100%", // ✅ allow Grid to control width
             }}
           >
-            <Typography variant="h6">This is Container 1</Typography>
+            <Typography variant="h5" fontWeight="bold" gutterBottom>
+              💬 Let’s Chat
+            </Typography>
+            <Link href="/chat" passHref>
+              <Button
+                variant="contained"
+                color="primary"
+                sx={{
+                  px: 4,
+                  py: 1.5,
+                  borderRadius: 3,
+                  textTransform: "none",
+                  fontWeight: "bold",
+                }}
+              >
+                Message Now
+              </Button>
+            </Link>
           </Paper>
         </Grid>
+
+        {/* Card 2 - Another Feature */}
         <Grid item xs={12} md={6}>
           <Paper
-            elevation={3}
+            elevation={4}
             sx={{
-              height: '50vh',
-              borderRadius: 4,
-              p: 3,
-              backgroundColor: "#ffebee",
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center'
+              height: 300,
+              borderRadius: 3,
+              p: 4,
+              backgroundColor: "#e3f2fd",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
+              width: "100%",
             }}
           >
-            <Typography variant="h6">This is Container 2</Typography>
+            <Typography variant="h5" fontWeight="bold" gutterBottom>
+              🚀 Another Feature
+            </Typography>
+            <Typography variant="body1" color="text.secondary">
+              This is a placeholder for additional content. Add analytics, reports, or actions here.
+            </Typography>
+          </Paper>
+        </Grid>
+
+
+        <Grid item xs={12} md={6}>
+          <Paper
+            elevation={4}
+            sx={{
+              height: 300,
+              borderRadius: 3,
+              p: 4,
+              backgroundColor: "#e3f2fd",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
+              width: "100%", // ✅ allow Grid to control width
+            }}
+          >
+            <Typography variant="h5" fontWeight="bold" gutterBottom>
+              Generate Report
+            </Typography>
+            <Link href="/chat" passHref>
+              <Button
+                variant="contained"
+                color="primary"
+                sx={{
+                  px: 4,
+                  py: 1.5,
+                  borderRadius: 3,
+                  textTransform: "none",
+                  fontWeight: "bold",
+                }}
+              >
+                Download
+              </Button>
+            </Link>
           </Paper>
         </Grid>
       </Grid>
+
+
+
+
+
     </Box>
   );
 }

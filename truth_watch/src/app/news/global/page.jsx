@@ -1,4 +1,4 @@
-import { fetchNewsIndia } from "../lib/fetchNewsIndia";
+import { fetchNewsGlobal } from "../../lib/fetchNewsGlobal";
 import Link from "next/link";
 
 import {
@@ -12,11 +12,11 @@ import {
   Container,
 } from "@mui/material";
 
-export default async function HomePage() {
+export default async function global() {
   let articles = [];
 
   try {
-    articles = await fetchNewsIndia();
+    articles = await fetchNewsGlobal();
   } catch (error) {
     return (
       <Typography color="error">
@@ -28,11 +28,11 @@ export default async function HomePage() {
   return (
     <Container sx={{ py: 4 }}>
       <Typography variant="h4" gutterBottom align="center">
-        📰 Top News from India
+        📰 Top News from World
         <Button
           variant="outlined"
           component={Link}
-          href="/contact/global"
+          href="/news"
           sx={{
             textTransform: "none",
             fontWeight: 500,
@@ -43,7 +43,7 @@ export default async function HomePage() {
             ml: "100px",
           }}
         >
-          🌍 Back to Global News
+          🌍 Back to Indian News
         </Button>
       </Typography>
 
