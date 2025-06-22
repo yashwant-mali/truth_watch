@@ -1,7 +1,10 @@
 "use client"; // Mark as client component
 
-import { useRouter } from "next/navigation";
+import Dashboard from "./dashboard/page";
 export default function Home() {
-  const router = useRouter();
-  return <div>this is home page</div>;
+  return (
+    <div>
+      <Dashboard />
+    </div>
+  );
 }
