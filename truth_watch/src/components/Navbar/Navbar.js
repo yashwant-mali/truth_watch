@@ -21,7 +21,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-const navItems = ["Dashboard", "About", "Info", "Yashgpt", "Reports", "Series", "News", 'Chat'];
+const navItems = ["Dashboard", "Yashgpt", "News", 'Chat'];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -52,7 +52,7 @@ export default function Navbar() {
 
   return (
     <>
-      <AppBar position="static" sx={{ backgroundColor: "initial" }}>
+      <AppBar position="static" sx={{ backgroundColor: "initial", borderRadius: '10px' }}>
         <Container maxWidth="xl">
           <Toolbar sx={{ justifyContent: "space-between" }}>
             {/* Left: App Name */}
@@ -93,7 +93,7 @@ export default function Navbar() {
             <Stack direction="row" alignItems="center" spacing={2}>
               {/* Hamburger on small screens */}
               <IconButton
-                color="inherit"
+                color="black"
                 edge="start"
                 onClick={handleDrawerToggle}
                 sx={{ display: { md: "none" } }}
